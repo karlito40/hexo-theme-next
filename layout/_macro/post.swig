@@ -27,9 +27,9 @@
       <div class="post-meta">
           <span class="post-time">
             {% if is_home() or is_post() %}
-              {{ __('post.posted') }} {{ post.date | date('Y-m-d') }}
+              {{ __('post.posted') }} {{ post.date | date('d/m/Y') }}
             {% else %}
-              {{ post.date | date('m-d') }}
+              {{ post.date | date('d/m') }}
             {% endif %}
           </span>
         {% if post.comments %}
