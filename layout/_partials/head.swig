@@ -20,6 +20,10 @@
     <meta name="description" content="{{ config.description }}" />
 {% endif %}
 
+{% if config.keywords %}
+    <meta name="keywords" content="{{ config.keywords }}" />
+{% endif %}
+
 {% if theme.rss %}
     <link rel="alternate" href="{{ url_for(theme.rss) }}" title="{{ config.title }}" type="application/atom+xml" />
 {% endif %}
@@ -27,5 +31,11 @@
 {% if theme.favicon %}
     <link rel="shorticon icon" type="image/x-icon" href="{{ url_for(theme.favicon) }}?v={{ theme.version }}" />
 {% endif %}
+
+<style>
+body{
+	word-spacing:2px;
+}
+</style>
 
 {% include 'analytics/baidu-analytics.swig' %}

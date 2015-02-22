@@ -2,7 +2,7 @@ menu:
   home: /
   archives: /archives
   tags: /tags
-  about: /about
+  #about: /about
 
 language: fr-FR
 
@@ -17,10 +17,10 @@ rss:
 # Icon fonts
 # Place your font into next/source/fonts, specify directory-name and font-name here
 # Avialable: default | linecons | fifty-shades | feather
-icon_font: default
-#icon_font: fifty-shades
-#icon_font: feather
-#icon_font: linecons
+# icon_font: default
+# icon_font: fifty-shades
+# icon_font: feather
+icon_font: linecons
 
 # Code Highlight theme
 # Available value: normal | night | night eighties | night blue | night bright
@@ -45,3 +45,7 @@ images: /images
 
 # Theme version
 version: 0.3.0rc1
+
+social:
+  github: https://github.com/karlito40
+  twitter: https://twitter.com/karlito40
